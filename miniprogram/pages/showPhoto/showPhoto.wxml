@@ -1,0 +1,3 @@
+<view wx:for="{{fileList}}" wx:item="item" wx:key="{{index}}">
+  <image src='{{item.tempFileURL}}'></image>
+</view>

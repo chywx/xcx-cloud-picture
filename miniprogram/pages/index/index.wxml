@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+  </view>
+
+
+  <!-- 上传图片 -->
+  <!-- <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view> -->
+
+
+  <!-- 操作数据库 -->
+  <!-- <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view> -->
+
+  <!-- 新建云函数 -->
+  <!-- <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view> -->
+
+  <!-- test -->
+  <!-- <view class="uploader">
+    <navigator url="../test/test" open-type="navigate" class="uploader-text">
+      <text>test</text>
+    </navigator>
+  </view> -->
+
+  <!-- 上传图片 -->
+  <view class="uploader">
+    <navigator url="../photo/question-ask" open-type="navigate" class="uploader-text">
+      <text>上传图片</text>
+    </navigator>
+  </view>
+  <!-- 查看相册 -->
+  <view class="uploader">
+    <navigator url="../showPhoto/showPhoto" open-type="navigate" class="uploader-text">
+      <text>查看相册</text>
+    </navigator>
+  </view>
+
+  
+
+  <!-- <image src='cloud://dahai01-1ab99c.6461-dahai01-1ab99c/my-image.jpg'></image> -->
+</view>
+<official-account></official-account>

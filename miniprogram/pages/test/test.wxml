@@ -1,0 +1,11 @@
+<view>
+  <button bindtap='getBook'>获取书籍</button>
+  <view wx:for="{{books}}" wx:key="{{index}}" wx:item="item">
+    <block>书名：{{item.bookName}}  </block>
+    <block>价格：{{item.bookPrice}}</block>
+  </view>
+  <button bindtap='getImage'>我的相册</button>
+  <view wx:for="{{fileList}}" wx:item="item" wx:key="{{index}}">
+    <image src='{{item.tempFileURL}}'></image>
+  </view>
+</view>
