@@ -1,3 +1,7 @@
-<view wx:for="{{fileList}}" wx:item="item" wx:key="{{index}}">
+<view wx:for="{{fileList}}" wx:item="item" wx:key="{{index}}" style='padding:20px;'>
   <image src='{{item.tempFileURL}}'></image>
+  <view style="text-align:center">
+    <view>标题:{{allData[index].title}}</view>
+    <view>内容:{{allData[index].content}}</view>
+  </view>
 </view>

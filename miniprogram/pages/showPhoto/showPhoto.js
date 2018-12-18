@@ -15,9 +15,13 @@ Page({
     var that = this;
     db.collection('photo').where({
       _openid: getApp().globalData.openid
-    }).get({
+    }).orderBy('_id','desc').get({
       success: res => {
-        console.log('[数据库] [查询记录] 成功: ', JSON.stringify(res.data))
+        //console.log('[数据库] [查询记录] 成功: ', JSON.stringify(res.data))
+        //console.log(res.data);
+        that.setData({
+          allData:res.data
+        })
         var fileList = [];
         for (var i in res.data) {
           fileList.push(res.data[i].fileId);
